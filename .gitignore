@@ -1,3 +1,16 @@
 upd72020x-load
 *.mem
-
+Makefile
+.deps/
+Makefile.in
+aclocal.m4
+arm-libtool
+autom4te.cache/
+build-aux/
+config.h
+config.h.in
+config.log
+config.status
+configure
+stamp-h1
+upd72020x-load.o
