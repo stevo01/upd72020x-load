@@ -1,6 +1,6 @@
 # upd72020x-load
 
-upd72020x-load is a Linux userspace firmware loader for Renesas uPD720201/uPD720202 familiy USB 3.0 controllers. 
+upd72020x-load is a Linux userspace firmware loader for Renesas uPD720201/uPD720202 familiy USB 3.0 controllers.
 It provides the functionality to upload the firmware required for certain extension cards before they can used with Linux.
 
 ## Usage
@@ -22,7 +22,7 @@ The story behind this tool and more technical details are discussed in a [blog p
 
 ## Closing remarks
 
-This tool was only tested with an uPD720202 based extension card. 
+This tool was only tested with an uPD720202 based extension card.
 The up- and download protocol of the uPD720201 chipset is identical according to the specification.
 However, certain magic numbers, e.g. device identifiers and strings which are checked before any attempt to read or write data, need most likely to be changed for uPD720201 based devices.
 
@@ -32,3 +32,11 @@ And of course: Use this tool at your own risk!
 
 This code is based on the code which was written the comments section of [this blogpost](http://billauer.co.il/blog/2015/11/renesas-rom-setpci/).
 
+## build
+
+### build for arm architecture
+```
+./autogen.sh
+./configure --host=arm
+make
+```
